@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useChat } from "../context/ChatContext";
 
 import ChatWindow from "../components/ChatWindow";
-import Sidebar from "../components/Sidebar";
+
 import { motion, AnimatePresence } from "framer-motion";
 import AppSideBar from "../components/AppSideBar";
 
