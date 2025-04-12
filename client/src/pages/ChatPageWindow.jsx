@@ -5,7 +5,7 @@ import ChatWindow from "../components/ChatWindow";
 import { ArrowLeft, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function ChatPage() {
+export default function ChatPageWindow() {
   const [showSidebar, setShowSidebar] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const { currentChat } = useChat();
