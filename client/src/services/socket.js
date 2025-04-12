@@ -4,9 +4,8 @@ let socket;
 
 // Get the current hostname to support both localhost and network access
 const getServerUrl = () => {
-  const protocol = window.location.protocol === 'https:' ? 'https://' : 'http://';
-  const hostname = window.location.hostname;
-  return `${protocol}${hostname}:5000`; // Backend runs on port 5000
+  //return `http://localhost:5000/api`;
+  return `https://mswd1-1-server.onrender.com/api`;
 };
 
 export const initiateSocket = () => {
