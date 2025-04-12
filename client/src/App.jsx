@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useAuth } from "./context/AuthContext";
 import AuthPage from "./pages/AuthPage";
-import ChatPage from "./pages/chatpage"; // Fixed casing to match actual file name
+
 import Hero from "./components/Hero";
+import ChatPageWindow from "./pages/ChatPageWindow";
 
 function App() {
   const { currentUser, loading } = useAuth();
@@ -21,7 +22,7 @@ function App() {
   }
 
   if (currentUser) {
-    return <ChatPage />;
+    return <ChatPageWindow />;
   }
 
   const handleGetStarted = (mode = 'login') => {
