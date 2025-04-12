@@ -20,7 +20,11 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
-    origin: "*", // Allow connections from any origin
+    origin: [
+      "https://talkativeme.vercel.app/",
+      "http://localhost:5173",
+      "*",
+    ], // Allow connections from any origin
     methods: ["GET", "POST"],
     credentials: true
   }
