@@ -11,7 +11,7 @@ import SidebarNotifications from "./SidebarNotifications";
 import SidebarBottomMenu from "./SidebarBottomMenu";
 import AddFriendDrawer from "./AddFriendDrawer";
 
-export default function Sidebar() {
+export default function AppSideBar() {
   const { currentUser, logout } = useAuth();
   const { chats, setCurrentChat, currentChat, searchUser, addFriend, refreshChats, setChats } = useChat();
   

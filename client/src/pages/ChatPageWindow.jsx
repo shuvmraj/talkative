@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useChat } from "../context/ChatContext";
-import Sidebar from "../components/sidebar/Sidebar";
+
 import ChatWindow from "../components/ChatWindow";
-import { ArrowLeft, Menu } from "lucide-react";
+import Sidebar from "../components/Sidebar";
 import { motion, AnimatePresence } from "framer-motion";
+import AppSideBar from "../components/AppSideBar";
 
 export default function ChatPageWindow() {
   const [showSidebar, setShowSidebar] = useState(true);
@@ -49,7 +50,7 @@ export default function ChatPageWindow() {
             className={`${isMobile ? 'absolute inset-y-0 left-0 z-40' : 'relative'}`}
             style={{ width: isMobile ? '85%' : '380px', maxWidth: isMobile ? '85%' : '30%' }}
           >
-            <Sidebar onChatSelect={isMobile ? () => setShowSidebar(false) : undefined} />
+            <AppSideBar onChatSelect={isMobile ? () => setShowSidebar(false) : undefined} />
           </motion.div>
         )}
       </AnimatePresence>
