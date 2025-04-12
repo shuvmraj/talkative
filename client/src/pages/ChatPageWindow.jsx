@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useChat } from "../context/ChatContext";
-import Sidebar from "../components/sidebar";
+import Sidebar from "../components/sidebar/Sidebar";
 import ChatWindow from "../components/ChatWindow";
 import { ArrowLeft, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
